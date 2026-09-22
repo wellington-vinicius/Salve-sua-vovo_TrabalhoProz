@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salve sua vovo - Análise</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="app-shell" id="pagina-analise">
+    <div class="app-conteudo">
+
+      <header>
+        <h1>Raio-X da conversa 🩻</h1>
+        <hr class="divisor">
+        <h2>Tem cheiro de golpe ou é só papo torto? 👃</h2>
+        <p class="texto-suave">
+          Cole a mensagem abaixo. Nossa equipe imaginária de detetives vai procurar pressa,
+          romance instantâneo e pedidos suspeitos.
+        </p>
+      </header>
+
+      <form id="formulario-analise">
+        <div class="cartao area-campo">
+          <label for="mensagem-para-analisar">📝 Deposite a mensagem suspeita aqui</label>
+          <textarea
+            class="campo-mensagem"
+            id="mensagem-para-analisar"
+            name="mensagem"
+            placeholder="Ex.: Meu bem, só falta uma taxa para eu chegar... 😬"
+            required
+          ></textarea>
+        </div>
+
+        <div class="aviso-privacidade" id="aviso-privacidade">
+          🔒 Tudo confidencial. O golpista não recebe spoiler da investigação.
+        </div>
+
+        <button class="botao-primario" id="botao-analisar-mensagem" type="submit">
+          🕵️ Investigar mensagem
+        </button>
+
+        <p class="mensagem-feedback" id="feedback-analise" aria-live="polite"></p>
+      </form>
+    </div>
+
+    
+<nav class="navegacao-inferior" aria-label="Navegação principal">
+  <a class="link-navegacao " href="index.html" id="nav-inicio">
+    <span class="icone-nav">⌂</span>
+    <span>Início</span>
+  </a>
+  <a class="link-navegacao ativo" href="analise.html" id="nav-analise">
+    <span class="icone-nav">⌕</span>
+    <span>Análise</span>
+  </a>
+  <a class="link-navegacao " href="verificar.html" id="nav-verificar">
+    <span class="icone-nav">♢</span>
+    <span>Verificar</span>
+  </a>
+  <a class="link-navegacao " href="ajuda.html" id="nav-ajuda">
+    <span class="icone-nav">ⓘ</span>
+    <span>Ajuda</span>
+  </a>
+</nav>
+
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

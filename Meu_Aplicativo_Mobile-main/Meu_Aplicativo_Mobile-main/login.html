@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Salve sua vovo - Login</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+</head>
+
+
+<body>
+
+    <main class="tela-login">
+
+        <section class="login-container">
+
+            <div class="login-logo">
+
+                <div class="icone-coracao">
+                    ❤
+                </div>
+
+                <h1 class="titulo-aplicativo">
+                    Salve sua vovo
+                </h1>
+
+                <p class="subtitulo-aplicativo">
+                    Sua segurança começa aqui
+                </p>
+
+            </div>
+
+
+            <form
+                id="form-login"
+                class="formulario-login"
+            >
+
+                <div class="grupo-campo">
+
+                    <label
+                        for="email-login"
+                        class="label-campo"
+                    >
+                        E-mail
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email-login"
+                        class="input-campo"
+                        placeholder="Digite seu e-mail"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="grupo-campo">
+
+                    <label
+                        for="senha-login"
+                        class="label-campo"
+                    >
+                        Senha
+                    </label>
+
+                    <div class="senha-container">
+
+                        <input
+                            type="password"
+                            id="senha-login"
+                            class="input-campo input-senha"
+                            placeholder="Digite sua senha"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            id="botao-mostrar-senha"
+                            class="botao-mostrar-senha"
+                            aria-label="Mostrar senha"
+                        >
+                            👁
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="opcoes-login">
+
+                    <label class="lembrar-container">
+
+                        <input
+                            type="checkbox"
+                            id="lembrar-login"
+                        >
+
+                        <span>
+                            Lembrar de mim
+                        </span>
+
+                    </label>
+
+
+                    <a
+                        href="#"
+                        class="link-esqueci-senha"
+                    >
+                        Esqueci minha senha
+                    </a>
+
+                </div>
+
+
+                <p
+                    id="mensagem-login"
+                    class="mensagem-login"
+                ></p>
+
+
+                <button
+                    type="submit"
+                    id="botao-entrar"
+                    class="botao-principal"
+                >
+                    Entrar
+                </button>
+
+
+                <div class="divisor-login">
+
+                    <span>
+                        ou
+                    </span>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    id="botao-criar-conta"
+                    class="botao-secundario"
+                >
+                    Criar conta
+                </button>
+
+            </form>
+
+
+            <footer class="rodape-login">
+
+                <p>
+                    Ao continuar, você concorda com nossos
+                    Termos de Uso e Política de Privacidade.
+                </p>
+
+            </footer>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>
