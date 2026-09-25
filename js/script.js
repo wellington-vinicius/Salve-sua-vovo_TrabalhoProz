@@ -1,5 +1,10 @@
 
 document.addEventListener("DOMContentLoaded", function () {
+  if (localStorage.getItem("usuarioLogado") !== "true") {
+    window.location.replace("login.html");
+    return;
+  }
+
   configurarSplash();
   configurarAnalise();
   configurarPerfil();
@@ -12,8 +17,13 @@ function configurarSplash() {
 
   if (!splash || !botaoComecar) return;
 
-  botaoComecar.addEventListener("click", function () {
+  if (localStorage.getItem("usuarioLogado") === "true") {
     splash.classList.add("oculto");
+    return;
+  }
+
+  botaoComecar.addEventListener("click", function () {
+    window.location.href = "cadastro.html";
   });
 }
 

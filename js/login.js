@@ -20,6 +20,10 @@ const botaoMostrarSenha =
 const botaoCriarConta =
     document.getElementById("botao-criar-conta");
 
+function funcao1() {
+    alert("Login realizado com sucesso!");
+}
+
 
 // =============================
 // MOSTRAR OU ESCONDER SENHA
@@ -63,18 +67,26 @@ formularioLogin.addEventListener(
         const senha = campoSenha.value.trim();
 
 
-        // Usuário usado apenas para testes
-        const emailCorreto =
-            "aluno@email.com";
+        const usuarioSalvo =
+            JSON.parse(localStorage.getItem("usuarioCadastrado"));
 
-        const senhaCorreta =
-            "1234";
+        const emailCorreto = usuarioSalvo
+            ? usuarioSalvo.email
+            : "";
+
+        const senhaCorreta = usuarioSalvo
+            ? usuarioSalvo.senha
+            : "";
 
 
         if (
             email === emailCorreto &&
             senha === senhaCorreta
         ) {
+
+            localStorage.setItem("usuarioLogado", "true");
+
+            funcao1();
 
             mensagemLogin.style.color =
                 "#2e7d32";
@@ -111,7 +123,6 @@ formularioLogin.addEventListener(
 botaoCriarConta.addEventListener(
     "click",
     function () {
-
         window.location.href =
             "cadastro.html";
 
